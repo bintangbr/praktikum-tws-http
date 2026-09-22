@@ -3,29 +3,7 @@ header("Content-Type: application/json; charset=utf-8");
 header("X-API-Version: 1.0");
 header("X-Resource: matakuliah");
 
-$matakuliah = [
-    [
-        "id"       => 1,
-        "kode"     => "MK001",
-        "nama"     => "Pemrograman Web",
-        "sks"      => 3,
-        "semester" => 4,
-    ],
-    [
-        "id"       => 2,
-        "kode"     => "MK002",
-        "nama"     => "Basis Data",
-        "sks"      => 3,
-        "semester" => 3,
-    ],
-    [
-        "id"       => 3,
-        "kode"     => "MK003",
-        "nama"     => "Kecerdasan Buatan",
-        "sks"      => 2,
-        "semester" => 5,
-    ],
-];
+require "data_matakuliah.php";
 
 function respond(int $code, array $body): void
 {

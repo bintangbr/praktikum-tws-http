@@ -1,0 +1,170 @@
+{
+  "info": {
+    "_postman_id": "c81949c3-20d5-4612-96a0-addb74d45da3",
+    "name": "TWS",
+    "description": "**TWS-Teknologi Web Service**",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "24155441"
+  },
+  "item": [
+    {
+      "name": "Simulasi Post Data",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"23670058\",\n    \"name\": \"Bintang Bradhiena Surya\",\n    \"major\": \"Informatika67\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8001/mahasiswa.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8001",
+          "path": [
+            "mahasiswa.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Simulasi-error",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8001/error-demo.php?case=server-error",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8001",
+          "path": [
+            "error-demo.php"
+          ],
+          "query": [
+            {
+              "key": "case",
+              "value": "server-error"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "FOrmat-data",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8001/format.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8001",
+          "path": [
+            "format.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8001/mahasiswa.php",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"23670058\",\n    \"name\": \"Bintang Bradhiena Surya\",\n    \"major\": \"Informatika67\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8001/mahasiswa.php?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8001",
+          "path": [
+            "mahasiswa.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8001/mahasiswa.php Copy",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"23670058\",\n    \"name\": \"Bintang Bradhiena Surya\",\n    \"major\": \"Informatika67\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8001/mahasiswa.php?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8001",
+          "path": [
+            "mahasiswa.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
